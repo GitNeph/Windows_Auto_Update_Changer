@@ -1,0 +1,22 @@
+                                                                                         
+WWWWWWWW                           WWWWWWWW   AAA           UUUUUUUU     UUUUUUUU       CCCCCCCCCCCCC
+W::::::W                           W::::::W  A:::A          U::::::U     U::::::U    CCC::::::::::::C
+W::::::W                           W::::::W A:::::A         U::::::U     U::::::U  CC:::::::::::::::C
+W::::::W                           W::::::WA:::::::A        UU:::::U     U:::::UU C:::::CCCCCCCC::::C
+ W:::::W           WWWWW           W:::::WA:::::::::A        U:::::U     U:::::U C:::::C       CCCCCC
+  W:::::W         W:::::W         W:::::WA:::::A:::::A       U:::::D     D:::::UC:::::C              
+   W:::::W       W:::::::W       W:::::WA:::::A A:::::A      U:::::D     D:::::UC:::::C              
+    W:::::W     W:::::::::W     W:::::WA:::::A   A:::::A     U:::::D     D:::::UC:::::C              
+     W:::::W   W:::::W:::::W   W:::::WA:::::A     A:::::A    U:::::D     D:::::UC:::::C              
+      W:::::W W:::::W W:::::W W:::::WA:::::AAAAAAAAA:::::A   U:::::D     D:::::UC:::::C              
+       W:::::W:::::W   W:::::W:::::WA:::::::::::::::::::::A  U:::::D     D:::::UC:::::C              
+        W:::::::::W     W:::::::::WA:::::AAAAAAAAAAAAA:::::A U::::::U   U::::::U C:::::C       CCCCCC
+         W:::::::W       W:::::::WA:::::A             A:::::AU:::::::UUU:::::::U  C:::::CCCCCCCC::::C
+          W:::::W         W:::::WA:::::A               A:::::AUU:::::::::::::UU    CC:::::::::::::::C
+           W:::W           W:::WA:::::A                 A:::::A UU:::::::::UU        CCC::::::::::::C
+            WWW             WWWAAAAAAA                   AAAAAAA  UUUUUUUUU             CCCCCCCCCCCCC
+
+
+
+
+            

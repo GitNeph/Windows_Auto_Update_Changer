@@ -1,14 +1,63 @@
+function Get-Funky{
+    param([string]$Text)
+
+    $Text.ToCharArray() | ForEach-Object{
+        switch -Regex ($_){
+            "`r"{
+                break
+            }
+            "`n"{
+                Write-Host " ";break
+            }
+            "[^ ]"{
+                $writeHostOptions = @{
+                    ForegroundColor = ([system.enum]::GetValues([System.ConsoleColor])) | Get-Random
+                    #BackgroundColor = ([system.enum]::GetValues([System.ConsoleColor])) | Get-Random
+                    NoNewLine = $true
+                }
+                Write-Host $_ @writeHostOptions
+                break
+            }
+            " "{Write-Host " " -NoNewline}
+        }
+    }
+}
+
+$art = " .:::.   .:::.`n:::::::.:::::::`n:::::::::::::::
+':::::::::::::'`n  ':::::::::'`n    ':::::'`n      ':'"
+
+
+function Get-WAUCintro{
+    For ($i = 0; $i -lt 10; $i++){
+        Get-Funky $art
+        Write-Host "`n"
+        Start-Sleep -Milliseconds 500
+        Clear-Host
+        if ($i -eq 9){
+            Get-Funky $art
+            Write-Host "`n"
+        }
+    }
+}
+
+Get-WAUCintro
+
 Clear-Host
 
-Write-Host "0 -&gt; Change setting in Windows Update Service to allow a drop-down (default)"
-Write-Host "1 -&gt; Never check for updates. For those living on the edge."
-Write-Host "2 -&gt; Notify for download & notify for install. All the nagging without any of the power. Just as it should be."
-Write-Host "3 -&gt; Auto download & notify for install (Probably the best option for Ash)"
-Write-Host "4 -&gt; Auto download & Auto shedule install time. Because never knowing when it will happen keeps you on your toes."
+Get-Content .\Title.txt
+Write-Host "Windows-Automatic-Update-Changer v1.0 Copyright (C) 2020 Nephilim_AU [Brandon Pooler]`n"
+Write-Host "This program comes with ABSOLUTELY NO WARRANTY;"
+Write-Host "This is free software, and you are welcome to redistribute it.`n"
 
-Write-Host "Enter any character that is not [0/1/2/3/4] to exit. I suggest the ENTER key personally."
+Write-Host "0: Change setting in Windows Update Service to allow a drop-down (default)`n"
+Write-Host "1: Never check for updates. For those living on the edge.`n"
+Write-Host "2: Notify for download & notify for install. All the nagging without any of the power. Just as it should be.`n"
+Write-Host "3: Auto download & notify for install (Probably the best option for Ash)`n"
+Write-Host "4: Auto download & Auto shedule install time. Because never knowing when it will happen keeps you on your toes.`n"
+
+Write-Host "`nEnter any character that is not [0/1/2/3/4] to exit. I suggest the ENTER key personally."
 Write-Host
-switch(Read-Host "Choose YOur Fate Mortal"){
+switch(Read-Host "Choose Your Fate Mortal"){
     0 {$UpdateValue = 0}
     1 {$UpdateValue = 1}
     2 {$UpdateValue = 2}
